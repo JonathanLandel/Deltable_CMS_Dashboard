@@ -1,4 +1,4 @@
-<h1 align="center">🌐 Adam's Opinionated Sapper Template</h1>
+<h1 align="center">🔺 Deltable CMS</h1>
 
 Forked from babichjacob [@babichjacob](https://github.com/babichjacob)'s [`Opinionated Sapper`](https://github.com/babichjacob/sapper-firebase-typescript-graphql-tailwindcss-actions-template)
 
