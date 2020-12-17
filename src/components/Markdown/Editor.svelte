@@ -1,4 +1,4 @@
-<script>
+<script lang="ts">
   import Preview from "./Preview.svelte";
   import { Button } from "svelte-materialify/src";
   import Textarea from "svelte-materialify/src/components/Textarea/Textarea.svelte";

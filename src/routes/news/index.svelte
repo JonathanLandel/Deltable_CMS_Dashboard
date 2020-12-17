@@ -1,4 +1,4 @@
-<script context="module">
+<script context="module" lang="ts">
   export async function preload(
     this: any,
     route: {
@@ -62,7 +62,7 @@
   };
 </script>
 
-<style>
+<style lang="postcss">
   .container {
     @apply flex flex-row flex-wrap items-center justify-center p-3 overflow-auto;
   }

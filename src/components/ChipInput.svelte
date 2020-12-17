@@ -1,4 +1,4 @@
-<script>
+<script lang="ts">
   import { Button, TextField } from "svelte-materialify/src";
   import Chip from "svelte-materialify/src/components/Chip/Chip.svelte";
   import { createEventDispatcher } from "svelte";
