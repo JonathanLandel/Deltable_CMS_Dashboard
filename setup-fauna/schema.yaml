@@ -1,0 +1,38 @@
+---
+collections:
+  - name: blogs
+    indexes:
+      - name: blogs_by_name
+        terms:
+          - name
+          - tags
+        values:
+          - name
+          - tags
+  - name: interests
+    indexes:
+      - name: interests_by_name
+        terms:
+          - name
+          - tags
+        values:
+          - name
+          - tags
+  - name: news
+    indexes:
+      - name: news_by_name
+        terms:
+          - name
+          - tags
+        values:
+          - name
+          - tags
+  - name: projects
+    indexes:
+      - name: projects_by_name
+        terms:
+          - name
+          - tags
+        values:
+          - name
+          - tags

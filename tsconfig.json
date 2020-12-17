@@ -1,0 +1,45 @@
+{
+	"compilerOptions": {
+		"noImplicitThis": true,
+		"noEmitOnError": true,
+		"allowJs": true,
+		"resolveJsonModule": true,
+		"importHelpers": true,
+		"lib": [
+			"DOM",
+			"ES2017",
+			"WebWorker"
+		],
+		"baseUrl": ".",
+		"paths": {
+			"svelte-materialify/src": ["node_modules/svelte-materialify/@types"],
+			"@sapper/*": ["runtime/src/*"]
+		},
+		"target": "es2017",
+		"allowSyntheticDefaultImports": true,
+		"emitDecoratorMetadata": true,
+		"experimentalDecorators": true,
+		"importsNotUsedAsValues": "error",
+		"isolatedModules": true,
+		"moduleResolution": "node",
+		"sourceMap": true,
+		"strict": false,
+		"esModuleInterop": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+		"types": ["svelte"]
+	},
+	"include": [
+		"src/**/*",
+		"src/node_modules/**/*",
+		"setup-fauna/**.ts"
+	],
+	"exclude": [
+		"src/**/**.test.ts",
+		"node_modules/*",
+		"__sapper__/*",
+		"static/*",
+		"**.js"
+	],
+	"declaration": true
+}
