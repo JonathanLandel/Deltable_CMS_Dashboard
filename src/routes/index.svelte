@@ -2,13 +2,19 @@
   import ExampleComponent from "../components/ExampleComponent.svelte";
 </script>
 
+<style>
+  .centerer {
+    @apply flex-1 flex flex-col items-center justify-center;
+  }
+</style>
+
 <div class:centerer="{true}">
   <!-- Here's how you could extract conditional class groups with @apply -->
   <!-- This is an example component -->
   <div class="w-full p-4 mx-4">
     <ExampleComponent
-      title="Portfolio Dashboard"
-      paragraph="This is where you edit the content of your portfolio site using this custom CMS system!"
+      title="Application Explorer"
+      paragraph="Explore Application with easy installation"
     />
     <div class="grid m-4 ">
       <!-- Cards -->
@@ -30,7 +36,7 @@
             <p
               class="mb-2 text-sm font-medium text-gray-600 dark:text-gray-400"
             >
-              Blogs Posted
+              Views
             </p>
             <p class="text-lg font-semibold text-gray-500 dark:text-gray-200">
               10
@@ -106,7 +112,7 @@
             <p
               class="mb-2 text-sm font-medium text-gray-600 dark:text-gray-400"
             >
-              Public Projects
+              Applications Projects
             </p>
             <p class="text-lg font-semibold text-gray-500 dark:text-gray-200">
               35
@@ -117,7 +123,7 @@
     </div>
   </div>
   <main class="w-full">
-    <section class="m-4 border border-gray-500 border-solid rounded shadow">
+    <!-- <section class="m-4 border border-gray-500 border-solid rounded shadow">
       <header
         class="p-4 text-lg font-medium border-b border-gray-500 border-solid"
       >
@@ -177,15 +183,15 @@
           CHART HERE
         </pre>
       </section>
-    </section>
+    </section> -->
 
     <div class="flex flex-row flex-wrap">
-      <div class="w-full lg:w-1/2">
+      <div class="w-full lg">
         <section class="m-4 border border-gray-500 border-solid rounded shadow">
           <header
             class="p-4 text-lg font-medium border-b border-gray-500 border-solid"
           >
-            Most Profitable Renters
+            Applications
           </header>
           <section class="w-full overflow-x-auto">
             <table class="w-full" cellpadding="0" cellspacing="0">
@@ -198,7 +204,7 @@
                       >
                         A
                       </div>
-                      <div class="text-gray-500">Adobe</div>
+                      <div class="text-gray-500">Chat</div>
                     </div>
                   </td>
                   <td
@@ -215,7 +221,7 @@
                       >
                         B
                       </div>
-                      <div class="text-gray-500">Bank of America</div>
+                      <div class="text-gray-500">Google Reviews</div>
                     </div>
                   </td>
                   <td
@@ -232,7 +238,7 @@
                       >
                         L
                       </div>
-                      <div class="text-gray-500">Lamborghini Automobili</div>
+                      <div class="text-gray-500">Twitter Feed</div>
                     </div>
                   </td>
                   <td
@@ -249,7 +255,24 @@
                       >
                         G
                       </div>
-                      <div class="text-gray-500">Google London</div>
+                      <div class="text-gray-500">QR Code</div>
+                    </div>
+                  </td>
+                  <td
+                    class="p-2 pr-4 text-right text-gray-500 border-b border-gray-500 border-solid"
+                  >
+                    $9,586.11
+                  </td>
+                </tr>
+                <tr>
+                  <td class="p-2 py-4 border-b border-gray-500 border-solid">
+                    <div class="flex flex-row flex-wrap items-center pl-4">
+                      <div
+                        class="flex flex-row items-center justify-center w-12 h-12 mr-4 text-white bg-yellow-600 rounded-full"
+                      >
+                        G
+                      </div>
+                      <div class="text-gray-500">Contact Form</div>
                     </div>
                   </td>
                   <td
@@ -263,7 +286,7 @@
           </section>
         </section>
       </div>
-      <div class="w-full lg:w-1/2">
+      <!-- <div class="w-full lg:w-1/2">
         <section class="m-4 border border-gray-500 border-solid rounded shadow">
           <header
             class="p-4 text-lg font-medium border-b border-gray-500 border-solid"
@@ -345,13 +368,7 @@
             </table>
           </section>
         </section>
-      </div>
+      </div> -->
     </div>
   </main>
 </div>
-
-<style>
-  .centerer {
-    @apply flex-1 flex flex-col items-center justify-center;
-  }
-</style>

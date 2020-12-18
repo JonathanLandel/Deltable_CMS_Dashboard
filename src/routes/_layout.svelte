@@ -24,11 +24,11 @@
 
   let mini = true;
   let sticky = false;
-  let theme: "light" | "dark" = "dark";
+  let theme: "light" | "dark" = "light";
   let mobile = true;
   let darkmode = true;
-  let name = "Adam Manuel";
-  let title = "Portfolio CMS";
+  let name = "Delable";
+  let title = "Application Builder";
   let extraMenuOpen = false;
   let loading = true;
 
@@ -62,6 +62,20 @@
   let path: string;
   $: path = $page.path.slice(1);
 </script>
+
+<style>
+  .content {
+    @apply relative flex flex-col justify-start w-full mt-4 overflow-auto;
+  }
+
+  .main-content {
+    @apply content pl-16;
+  }
+
+  .main-content-sticky {
+    @apply content pl-64;
+  }
+</style>
 
 <svelte:head>
   <title>{path ? path.charAt(0).toUpperCase() + path.slice(1) : 'Index'}</title>
@@ -508,17 +522,3 @@
     </div>
   {/if}
 </div>
-
-<style>
-  .content {
-    @apply relative flex flex-col justify-start w-full mt-4 overflow-auto;
-  }
-
-  .main-content {
-    @apply content pl-16;
-  }
-
-  .main-content-sticky {
-    @apply content pl-64;
-  }
-</style>
